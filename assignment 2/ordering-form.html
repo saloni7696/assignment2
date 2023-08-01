@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pizza on the way</title>
+        <meta name="description" content="Assignment 2">
+        <meta name="robots" content="noindex, nofollow">
+       
+        <!-- adding fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Caladea:wght@400;700&family=Playfair+Display:wght@400;500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <!-- adding my js file -->
+    <script type="text/javascript" src="./js/myjsfile.js"></script>
+        <!-- add our bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Bootstrap Icons (https://icons.getbootstrap.com/#usage) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+        <!-- add our CSS -->
+        <link rel="stylesheet" href="./css/style2.css">
+      </head>
+<body class="flex-lesson">
+    <header class="sticky-top">
+      <!-- Logo image with a link to the homepage -->
+      <div >
+        <a href="index.html"><img src="./img/logo2.jpg" alt="header logo"></a>
+      </div>
+      <nav>
+        <!-- Navigation menu items -->
+        <menu>
+          <li class="hover-button"><a href="index.html">Menu</a></li>
+          <li class="hover-button"><a href="index.html">Coupons</a></li>
+          <li class="hover-button"><a href="index.html">Tracker</a></li>
+          <li class="hover-button"><a href="index.html">Rewards</a></li>
+           <!-- Icon and text for signing in or signing up -->
+          <li class="hover-button"><a href="index.html"><i class="bi bi-cart3">  </i> Sign in <br>Sign up</a></li>
+        </menu>
+      </nav>
+    </header>
+     <!-- Main content -->
+     <main>
+      <!-- First section with pizza items -->
+      <form action="ordered.html" method="post">
+        <section><h3>Menu</h3>
+          <div><p><input type="checkbox"></p><p> <img src="./img/pizza6.jpg" alt="Paneer pizza"></p><p>Paneer & Pepper Pizza <br>20$</p><p> Quantity <input type="number" class="quantity">  </p><p>
+            <!-- Checkbox, pizza image, and pizza details for the first pizza option -->
+                  
+          <label for="pizza1">Choose a size</label>
+          <!-- Dropdown for selecting pizza size -->
+          <select id="pizza1" name="pizza1">
+            <option value="small">small</option>
+            <option value="medium">medium</option>
+            <option value="large">large</option>
+          </select></p></div>
+           <!-- More pizza options follow in a similar structure -->
+          <div><p><input type="checkbox"></p><p> <img src="./img/pizza2.jpg" alt="pepperoni pizza"></p><p>Pepperoni pizza <br>22$</p><p> Quantity <input type="number" class="quantity">  </p><p>
+            <label for="pizza2">Choose a size</label>
+            <select id="pizza2" name="pizza2">
+              <option value="small">small</option>
+              <option value="medium">medium</option>
+              <option value="large">large</option>
+            </select></p></div>
+            <div><p><input type="checkbox"></p><p> <img src="./img/pizza5.jpg" alt="Farmhouse pizza"></p><p>Farmhouse pizza <br>19$</p><p> Quantity <input type="number" class="quantity">  </p><p>
+              <label for="pizza3">Choose a size</label>
+              <select id="pizza3" name="pizza3">
+                <option value="small">small</option>
+                <option value="medium">medium</option>
+                <option value="large">large</option>
+              </select></p></div>
+              <div><p><input type="checkbox"></p><p> <img src="./img/pizza4.jpg" alt="Pepper & Olive pizza"></p><p>Pepper & Olive pizza <br>17$</p><p> Quantity <input type="number" class="quantity">  </p><p>
+                <label for="pizza4">Choose a size</label>
+                <select id="pizza4" name="pizza4">
+                  <option value="small">small</option>
+                  <option value="medium">medium</option>
+                  <option value="large">large</option>
+                </select></p></div>
+            </section>
+             <!-- Section for creating a custom pizza with toppings -->
+                <section>
+                  <h4>Create Your Own With Toppings of Your Choice</h4>
+                   <!-- Checkbox and labels for selecting pizza toppings -->
+ 
+                  <div>
+                <label>Toppings: </label><br>
+                <!-- Toppings checkboxes -->
+                  <label>
+                    <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni
+                  </label>
+                  <label>
+                    <input type="checkbox" name="toppings" value="mushrooms"> Mushrooms
+                  </label>
+                  <label>
+                    <input type="checkbox" name="toppings" value="onions"> Onions
+                  </label>
+                  <label>
+                    <input type="checkbox" name="toppings" value="sausage"> Sausage
+                  </label>
+                  <label>
+                    <input type="checkbox" name="toppings" value="Pepper"> Pepper
+                  </label>
+                  <label>
+                    <input type="checkbox" name="toppings" value="Black Olives"> Black Olives
+                  </label>
+                  <label>
+                    <input type="checkbox" name="toppings" value="Green Olives"> Green Olives
+                  </label>
+                  <label>
+                    <input type="checkbox" name="toppings" value="Jalapeño"> Jalapeño
+                  </label>
+                  <label>
+                    <input type="checkbox" name="toppings" value="No Topping at All"> No Topping at All
+                  </label>
+                </div>
+               
+                    <!-- Buttons for interacting with the form here the first button saves the info of the customized pizza and says "pizza saved" and the add more button resets all the selected checkboxes to choose new options for another pizza -->
+                  <p><button type="button" onclick="myFunction6()">Save</button>
+                    <button type="button" onclick="resetCheckboxes()">Add More</button>
+                  <button type="button" onclick="myFunction5()" >Next</button></p>
+                  <!-- this paragraph that showsall the info from the above buttons -->
+                  <p id="ss1"></p>
+                </section>
+                <section>
+                  <!-- Section for entering customer information -->
+                  <h3>Your Information</h3>
+                  <div>
+                    <!-- Form fields for name, email, phone number, address, and more -->
+                    <p> Name* : <input type="text" name="name" placeholder="Full Name"  required></p>
+                    <p> Email : <input type="email" name="email" placeholder="someone@gmail.com"></p>
+                    <p> Phone Number* : <input type="number" name="Contact" placeholder="(000)000-0000" required></p>
+                    <p> Where do you want us to deliver your order?* :  <input type="text" ></p>
+                    <p>When do you want us to deliver?* : <input type="datetime-local"  required></p>
+                    <p>Any allergies <input type="radio" name="f1" onclick="myFunction()"> Yes <input type="radio" name="f1" onclick="myFunction2()"> No   </p>
+                    <p id="showTxt"></p>
+                    <p>How Spicy Do You Want Your Pizza To be <input type="range"></p>
+                    <!-- this is the range button for how spicy it should be so that the chef knows better -->
+                    <p>Any message for the Chef <br><textarea placeholder="Your Message"></textarea></p>
+                    <button type="button" onclick="myFunction8()">Your Total</button>
+                    <span id="ss3"></span> <!-- Button to calculate total -->
+                  
+                    <p><label for="pay1">Payment method </label>
+                      <!-- Dropdown for selecting payment method -->
+                      <select id="pay1" name="pay1">
+                        <option value="Paypal">Paypal</option>
+                        <option value="Credit/Debit">Credit/Debit</option>
+                        <option value="GooglePay">GooglePay</option>
+                        <option value="Cash">Cash</option>
+                      </select></p>
+                      
+                  </div>
+                </section>
+               
+       <!-- Submit button to submit the form -->
+        <input type="submit" value="Submit" >
+      </form>
+    </main>  
+    <footer>
+      <!-- Footer section -->
+      <section>
+        <h4>About Us</h4>
+         <!-- Footer links and icons -->
+                <!-- Links for restaurant locator, guarantee policy, privacy policy, and terms and conditions -->
+               
+        <div>
+        <div><p><i class="bi bi-geo-alt fs-5"> </i> Restaurent locator</p>
+        <p>Guarantee Policy</p><p>privacy policy</p>
+        <p>Terms and condition</p></div>
+        <div>
+          <p>About Our Food</p>
+          <p>Our Quality</p>
+          <p>Nutrition</p>
+          <p>Menu FAQ</p>
+        </div>
+        <div><p>Franchising Basics</p>
+        <p>Franchising Oportunies</p>
+        <p>Meet Our Teams</p>
+        <p>Careers</p>
+        </div>
+        <!-- More footer links follow in a similar structure -->
+                <!-- Social media icons for Instagram, Facebook, and Twitter -->
+        <div><p>Contact Us</p><p><i class="bi bi-instagram fs-5"> </i>
+          <i class="bi bi-facebook fs-5"> </i> <i class="bi bi-twitter fs-5"> </i></p></div>
+        </div>
+        
+          <p>Pricing may vary by location. An additional charge may apply for premium toppings,sauces,extra cheese,and special pizza types including: Handmade Pan Pizza.Thin Crust Pizzas, Gluten Free Pizzas and Feast Pizzas.<br>
+
+              Please refer to offer when ordering. Limited time. Prices, participation, delivery area, terms and charges may vary.<br>
+              
+              According to our most recent assessment of scientific data, foods containing gluten levels not exceeding 20 PPM would not pose a health risk to the vast majority of individuals with Celiac Disease or to individuals with gluten sensitivity. The level of gluten found in our pizza made with Gluten Free Crust is below 20 PPM. However, pizza made with a Gluten Free Crust is prepared in a common kitchen with the risk of gluten exposure. Therefore, we DO NOT recommend this pizza for customers with Celiac Disease. Customers with gluten sensitivities should exercise judgement in consuming this pizza.
+              <br>This site is protected by reCAPTCHA and the Google  Privacy Policy  and  Terms of Service  apply.<br>Copyright © Pizza Pizza 2023
+        </p>
+      </section>
+    </footer>  
+</body>
+</html>

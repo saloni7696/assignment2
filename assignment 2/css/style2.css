@@ -1,0 +1,213 @@
+/* Header section */
+  .flex-lesson > header {
+    /* Styling for the header container */
+    height: 125px;
+    padding: 10px 10px;
+    display: flex;
+    background-color: #006491;
+    align-items: center;
+    border-collapse: collapse;
+  }
+  
+  .flex-lesson > header > div{
+    /* Styling for the logo container inside the header */
+    width: auto;
+    height: 90px;
+    flex-grow: 1;
+  }
+  .flex-lesson > header > div > a > img{
+    /* Styling for the logo image inside the logo container */
+    width: auto;
+    height: 100%;
+  }
+  .flex-lesson > header > nav > menu{
+     /* Styling for the navigation menu inside the header */
+    display: flex;
+    list-style: none;
+  }
+  .flex-lesson > header > nav > menu > li{
+    /* Styling for the individual menu items in the navigation */
+    padding-top: 43px;
+    padding-left: 23px;
+    padding-bottom: 30px;
+    padding-right: 23px;
+    font-family: 'roboto' , sans-serif;
+    
+  }
+  .flex-lesson > header > nav > menu > li > a{
+    /* Styling for the links in the menu items */
+    color: #0e0e0e;
+    text-decoration: none;
+    color:#f4f4f4;
+  } 
+ 
+  
+  /* Quantity input styling */
+    input.quantity {
+        width: 70px;}
+ /* Body section */
+body {
+    /* Global body styles */
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+  /* Form container styling */
+main {
+    /* Styling for the main container holding the form */
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+      /* Flexbox for specific sections within the form */
+      body > main > form > section:nth-child(1) > div:nth-child(2),
+      body > main > form > section:nth-child(1) > div:nth-child(3),
+      body > main > form > section:nth-child(1) > div:nth-child(4),
+      body > main > form > section:nth-child(1) > div:nth-child(5){
+        /* Applying flex layout to form sections */
+        display: flex;
+        padding : 1%;
+      }
+      p {
+        /* Adding padding to paragraphs in form sections */
+  padding: 0 4px;
+}
+
+/* Styling for section headers */
+      h3, h4 {
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 10px;
+      }
+  
+      /* Menu item and toppings labels styling */
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+  
+      /* Add More button styling */
+      button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+  
+      /* Submit button styling */
+      input[type="submit"] {
+        background-color: #f56a6a;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+  
+      /* Form input and textarea styling */
+      input[type="email"], textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+  
+    
+
+      body > main > form > section:nth-child(2) > div {
+        display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+      grid-gap: 10px;
+      }
+  
+      /* Styling for images in the form */
+      body > main > form > section:nth-child(1) > div:nth-child(2) > p:nth-child(2) > img,
+      body > main > form > section:nth-child(1) > div:nth-child(3) > p:nth-child(2) > img,
+      body > main > form > section:nth-child(1) > div:nth-child(4) > p:nth-child(2) > img,
+      body > main > form > section:nth-child(1) > div:nth-child(5) > p:nth-child(2) > img {
+        width: 150px;
+        height: auto;
+        padding:2px;
+        border:2px #d1cece solid ;
+        border-radius: 5cm;
+      }
+
+
+
+
+
+    /* footer */
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    background-color: #006491;
+    color: #f4f4f4;
+}
+footer div{
+    padding:10px;
+}
+body > footer > section > h4{
+  text-align: center;
+}
+body > footer > section > div{
+  display : grid;
+  grid-template-columns: repeat(4,25%);
+  padding-left: 100px;
+  font-size: 13px;
+}
+body > footer > section > p{
+  text-align: center;
+  padding: 20px 200px;
+  font-size: 10px;
+}
+/* Responsive styles using media queries */
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    header > nav {
+      order: -1;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    header > nav > menu {
+      flex-direction: column;
+    }
+  
+    header > nav > menu > li {
+      padding: 5px;
+    }
+  
+    header > nav > menu > li > a {
+      display: block;
+    }
+  }
+  
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+   /* Adjusting form elements for smaller screens */
+  form .row > div {
+    flex-basis: 100%;
+  }
+
+  /* Styling for buttons on smaller screens */
+  form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+  
+  
+  
+  
+  
